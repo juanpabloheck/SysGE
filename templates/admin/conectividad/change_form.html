@@ -1,0 +1,12 @@
+{# Extended just to add disclaimer #}
+{% extends 'admin/change_form.html' %}
+{% load url from future %}
+{% load i18n %}
+{% block after_related_objects %}
+
+  {{ block.super }}
+  <div class="disclaimer breadcrumb">
+    Para medir la conetividad satelital entrar al sitio:<a href="http://www.testdevelocidad.es/" target="_blank">www.testdevelocidad.es</a> y hacer click en el boton <b>"EMPEZAR"</b>, luego ingresar los valores de <b>"VELOCIDAD BAJADA"</b> y <b>"VELOCIDAD SUBIDA"</b> respectivamente en el Sistema. Velocidad promedio en el útimo mes (mes 3).
+    Le sugerimos que haga esta medición en al menos 5 días y turnos distintos durante el mes
+  </div>
+{% endblock %}

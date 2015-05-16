@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asistencia de Alumnos</title>
+</head>
+<body>
+<h1>Todos los Alumnos</h1>
+   {% for alu in alumnos_lista %}
+       <li><b>Nombre:</b>{{ alu.nombre }}</li>
+       <li><b>Apellido:</b>{{ alu.apellido }}</li>
+       <li><b>DNI:</b>{{ alu.dni }}</li>
+   {% endfor %}
+</body>
+</html>
